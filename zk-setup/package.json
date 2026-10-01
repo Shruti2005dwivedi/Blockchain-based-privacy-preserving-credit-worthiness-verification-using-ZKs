@@ -1,0 +1,19 @@
+{
+  "name": "zk-setup",
+  "version": "1.0.0",
+  "description": "Zero-knowledge proof circuit setup and compilation",
+  "scripts": {
+    "compile": "circom circuits/creditworthiness.circom --r1cs --wasm --sym --c -o build",
+    "setup": "node scripts/setup.js",
+    "generate-verifier": "snarkjs zkey export solidityverifier keys/creditworthiness_final.zkey contracts/Groth16Verifier.sol",
+    "generate-proof": "node scripts/generateProof.js",
+    "generate-proof:valid": "node scripts/generateProof.js circuits/input_example.json proof_valid.json",
+    "generate-proof:invalid": "node scripts/generateProof.js circuits/input_invalid.json proof_invalid.json"
+  },
+  "devDependencies": {
+    "snarkjs": "^0.7.3"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5"
+  }
+}

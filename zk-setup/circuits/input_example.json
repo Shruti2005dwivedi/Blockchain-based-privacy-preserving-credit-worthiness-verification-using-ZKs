@@ -1,0 +1,9 @@
+{
+  "_comment": "Example input for creditworthiness circuit - VALID case",
+  "income": "75000",
+  "creditScore": "720",
+  "paymentRatio": "85",
+  "minIncome": "50000",
+  "minCreditScore": "650",
+  "minPaymentRatio": "70"
+}

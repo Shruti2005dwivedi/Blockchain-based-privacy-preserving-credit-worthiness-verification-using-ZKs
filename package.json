@@ -1,0 +1,31 @@
+{
+  "name": "blockchain-zkp-creditworthiness",
+  "version": "1.0.0",
+  "description": "Blockchain-Based Privacy-Preserving Creditworthiness Verification Using Zero-Knowledge Proofs",
+  "private": true,
+  "workspaces": [
+    "blockchain",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "setup": "npm install --workspaces",
+    "clean": "npm run clean --workspaces --if-present"
+  },
+  "keywords": [
+    "blockchain",
+    "zero-knowledge-proofs",
+    "zkp",
+    "creditworthiness",
+    "circom",
+    "groth16",
+    "ethereum",
+    "privacy-preserving"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

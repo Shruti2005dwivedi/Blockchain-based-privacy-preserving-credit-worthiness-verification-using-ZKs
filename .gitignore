@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+out/
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+
+# ZK Setup
+zk-setup/keys/*
+!zk-setup/keys/.gitkeep
+zk-setup/build/*
+!zk-setup/build/.gitkeep
+*.ptau
+*.zkey
+*.r1cs
+*.wasm
+*.sym
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Deployment info (contains sensitive addresses)
+deployments/*.json
+!deployments/.gitkeep
+
+# Specs (internal documentation)
+.kiro/
